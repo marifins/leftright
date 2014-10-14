@@ -1,6 +1,0 @@
-leftright
-=========
-
-LeftRight Photography
-
-_____________________

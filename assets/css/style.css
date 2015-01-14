@@ -1,0 +1,195 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family:Helvetica, sans-serif;
+	font-size:16px;
+	color:#fff;
+	background-color:#000;
+	overflow:hidden;
+}
+h1{
+	margin:20px;
+	font-size:40px;
+}
+.st_overlay{
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:0px;
+	left:0px;
+	background:transparent url(../images/pattern.png) repeat-x bottom left;
+	opacity:0.3;
+}
+.st_main img.st_preview{
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:100%;
+}
+ul.st_navigation{
+	position:absolute;
+	width:100%;
+	top:140px;
+	left:-300px;
+	list-style:none;
+}
+ul.st_navigation li {
+	float:left;
+	clear:both;
+	margin-bottom:8px;
+	position:relative;
+	width:100%;
+}
+ul.st_navigation li span.st_link{
+	background-color:#000;
+	float:left;
+	position:relative;
+	line-height:50px;
+	padding:0px 20px;
+	-moz-box-shadow:0px 0px 2px #000;
+	-webkit-box-shadow:0px 0px 2px #000;
+	box-shadow:0px 0px 2px #000;
+	opacity: 0.7;
+}
+ul.st_navigation li span.st_arrow_down,
+ul.st_navigation li span.st_arrow_up{
+	position:absolute;
+	margin-left:15px;
+	width:40px;
+	height:50px;
+	cursor:pointer;
+	-moz-box-shadow:0px 0px 2px #000;
+	-webkit-box-shadow:0px 0px 2px #000;
+	box-shadow:0px 0px 2px #000;
+	-moz-border-radius:0px 10px 10px 0px;
+}
+ul.st_navigation li span.st_arrow_down{
+	background:#000 url(../images/icons/down.png) no-repeat center center;
+}
+ul.st_navigation li span.st_arrow_up{
+	background:#000 url(../images/icons/up.png) no-repeat center center;
+}
+.st_wrapper{
+	display:none;
+	position: absolute;
+    width:100%;
+    height:126px;
+    overflow-y:hidden;
+	top:50px;
+    left:0px;
+}
+.st_thumbs{
+    height:126px;
+    margin: 0;
+}
+.st_thumbs img{
+    float:left;
+    margin:3px 3px 0px 0px;
+    cursor:pointer;
+	-moz-box-shadow:1px 1px 5px #000;
+	-webkit-box-shadow:1px 1px 5px #000;
+	box-shadow:1px 1px 5px #000;
+	opacity:0.7;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+}
+.st_loading{
+	position:fixed;
+	bottom:0px;
+	right:0px;
+	background:#000 url(../images/icons/loader.gif) no-repeat 10px 50%;
+	padding:15px 40px 15px 60px;
+	-moz-box-shadow:0px 0px 2px #000;
+	-webkit-box-shadow:0px 0px 2px #000;
+	box-shadow:0px 0px 2px #000;
+	opacity:0.6;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=60);
+}
+.st_about{
+	display:none;
+	position:absolute;
+	top:50px;
+    left:0px;
+	opacity:0.6;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=60);
+}
+.st_subcontent{
+	background:#000;
+	padding:30px;
+	-moz-box-shadow:0px 0px 10px #000;
+	-webkit-box-shadow:0px 0px 10px #000;
+	box-shadow:0px 0px 10px #000;
+}
+/******************** Navigation ******************/
+ul#nav {
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
+    top: 0px;
+    right: 10px;
+    list-style: none;
+    z-index:999999;
+    width:1024px;
+}
+ul#nav li {
+    width: 113px;
+    display:inline;
+    float:left;    
+}
+ul#nav li a {
+    display: block;
+    float:left;
+    margin-top: -2px;
+    width: 110px;
+    height: 25px;
+    background-color:#000;
+    background-repeat:no-repeat;
+    background-position:50% 10px;
+    border:1px solid #000;
+	-moz-box-shadow:0px 0px 2px #000;
+	-webkit-box-shadow:0px 0px 2px #000;
+	box-shadow:0px 0px 2px #000;
+    -moz-border-radius:0px 0px 10px 10px;
+    /**
+	-webkit-border-bottom-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -khtml-border-bottom-right-radius: 10px;
+    -khtml-border-bottom-left-radius: 10px;
+	*/
+    text-decoration:none;
+    text-align:center;
+    padding-top:80px;
+    opacity: 90;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);  
+}
+ul#nav li a:hover{
+     background-color:#000;
+}
+ul#nav li a span{
+    font-size:16px;
+    color:#fff;
+	font-weight:bold;
+    text-shadow: 0 -1px 1px #fff;      
+}
+ul#nav .home a{
+    background-image: url(../images/home.png);
+}
+ul#nav .about a      {
+    background-image: url(../images/id_card.png);
+}
+ul#nav .search a      {
+    background-image: url(../images/search.png);
+}
+ul#nav .podcasts a      {
+    background-image: url(../images/ipod.png);
+}
+ul#nav .rssfeed a   {
+    background-image: url(../images/rss.png);
+}
+ul#nav .photos a     {
+    background-image: url(../images/camera.png);
+}
+ul#nav .contact a    {
+    background-image: url(../images/mail.png);
+}
